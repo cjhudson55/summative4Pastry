@@ -1,0 +1,176 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  max-width: 1440px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ml-2 {
+  margin-left: 2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+  }
+  
+/* Loader */
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; 
+}
+
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  /* background: #fff; */
+  background: orange;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+
+/* End of loader */
+button {
+  padding: 1rem 2rem;
+  color: white;
+  background-image: linear-gradient(to right, #9BE15D, #00D9A6);
+  border-color: transparent;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-small {
+  margin-top: 1rem;
+  padding: .5rem 2.5rem;
+  font-size: .9rem;
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  background-color: #FF9400;
+  border-radius: 50%;
+}
+
+.page-heading {
+  color: #FF9400;
+  margin-bottom: 1.5rem;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.page-sub-heading {
+  margin-left: 1.5rem;
+  margin-bottom: -1rem;
+  color: #504233;
+  margin-bottom: 1.5rem;
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.space-above-footer {
+  padding: 3rem;
+  border-width: 0px;
+}
+
+/* Keyframes */
+
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+

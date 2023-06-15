@@ -1,0 +1,43 @@
+.footer-styles {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #504233;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-weight: 200;
+    font-size: .9rem;
+    padding: 1rem;
+}
+
+.col-3 {
+    width: 33%;
+    /* text-align: right; */
+}
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    display: flex;
+    justify-content: flex-end;
+
+
+    align-items: center;
+    /* text-align: right; */
+}
+
+.logo-img-footer {
+    width: 60px;
+    /* height: 100px; */
+    background-color: #504233;
+    border-radius: 50%;
+}
+
+.insta-custom {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}

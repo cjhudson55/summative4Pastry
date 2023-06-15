@@ -1,0 +1,67 @@
+.featured-image {
+    width: 300px;
+    margin: 1rem 0;
+}
+.indiv-item {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    padding-bottom: 1.5rem;
+    border-width: 0px 0px 1px 0px;
+    border-style: solid;
+    border-color: rgb(73, 73, 73);
+}
+
+.vegan {
+    height: 1rem;
+    width: 1rem;
+    margin-top: .5rem;
+
+    margin-left: 1rem;
+    background-color: #CFEBC0;
+    border-radius: 50%;
+}
+
+.gluten-free {
+    height: 1rem;
+    width: 1rem;
+    margin-top: .5rem;
+
+    margin-left: 1rem;
+    background-color: rgba(255, 148,0,.61);
+    border-radius: 50%;
+
+}
+
+.blank {
+    height: 1rem;
+    width: 1rem;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+.dietary-styling {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.dietary-styling-center {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.dietary-button {
+    background-image: none;
+    color: #504233;
+    border-width: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.dietary-button a {
+    color: #504233;
+    font-weight: 700;
+    letter-spacing: 0px;
+
+}

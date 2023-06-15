@@ -1,0 +1,45 @@
+.form-label {
+    text-align: left;
+}
+
+.form-styling {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    margin-bottom: 3rem;
+    width: 50vw;
+}
+
+.form-label {
+    text-align: left;
+}
+
+.mobile-padding {
+    padding: 0 0 2rem 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .form-styling {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .form-styling {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .form-styling {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .mobile-padding {
+        padding: 0 2rem 2rem 2rem;
+    }
+}
+

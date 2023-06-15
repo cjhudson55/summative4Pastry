@@ -1,0 +1,35 @@
+.featured-image-single-item {
+    width: 400px;
+    margin: 1rem 0 0 2rem;
+}
+
+.selected-option {
+    display: flex;
+    border-style: solid;
+    padding-bottom: 12px;
+    border-width: 0 0 1px 0;
+}
+
+/* @media screen and (max-width: 769px) { */
+@media screen and (max-width: 1074px) {
+    .selected-option {
+        flex-wrap: wrap;
+    }
+    .add-to-cart {
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .selected-option-buttons {
+        flex-wrap: wrap;
+    }
+    .featured-image-single-item {
+        width: 300px;
+        margin-left: 0 auto ;
+    }
+    .space-above-footer {
+        padding: 4rem;
+    }
+   
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo {
+    color: pink;
+    /* font-size: 2rem; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1b2430;
+    padding: 20px 80px;
+    /* for box shadow, value 1 is x axis, 2 is y axis, 3 is radius, 4 is shadow color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* make nav links display on row, rather as a column of list items */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* target the list items themselves now */
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* add some color for the list links */
+#navbar li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: orangered;
+}
+
+/* This is to make the underline on hover shorter for a nice effect */
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: orangered;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+/* target icons for hamburger and close icon for the mobile menu */
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: white;
+}
+
+/* media queries for controlling mobile menu */
+
+/* on the small device, want nav links to be in one column, not one row */
+
+@media screen and (max-width: 769px) {
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed; /* need to separate links from our navbar */
+        top: 75px;
+        right: 0px;
+        width: 300px;
+        height: 100vh;
+        background-color: #47515f;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, .01);
+        padding: 40px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active {
+        right: -300px;
+    }
+    
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    
+    #mobile {
+        display: block;
+    }
+    
+    #mobile i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    
+}

@@ -1,0 +1,107 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: orange;
+    /* font-size: 2rem; */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 80px;
+    /* for box shadow, value 1 is x axis, 2 is y axis, 3 is radius, 4 is shadow color */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* make nav links display on row, rather as a column of list items */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* target the list items themselves now */
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* add some color for the list links */
+#navbar li a {
+    text-decoration: none;
+    color: #504233;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+}
+
+#navbar li a:hover {
+    color: #FF9400;
+}
+
+
+#navbar li a.active {
+    border-bottom: 2px solid #504233;
+    padding-bottom: 1px;
+}
+
+#navbar li a.active:hover {
+    border-bottom: 2px solid #FF9400;
+    padding-bottom: 1px;
+}
+
+/* target icons for hamburger and close icon for the mobile menu */
+#mobile {
+    display: none;
+}
+
+#mobile i {
+    color: #504233;
+}
+
+/* media queries for controlling mobile menu */
+
+/* on the small device, want nav links to be in one column, not one row */
+
+/* @media screen and (max-width: 769px) { */
+    @media screen and (max-width: 900px) {
+        #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed; /* need to separate links from our navbar */
+        top: 140px;
+        right: 0px;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, .01);
+        padding: 80px 0 0 10px;
+        transition: 0.3s ease-in-out;
+    }
+
+    #navbar.active {
+        right: -300px;
+    }
+    
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    
+    #mobile {
+        display: block;
+    }
+    
+    #mobile i {
+        font-size: 24px;
+        cursor: pointer;
+    }
+    
+    
+}
