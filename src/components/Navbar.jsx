@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
 import { HashRouter, Routes, Route, NavLink } from 'react-router-dom'
+import navbarlogo from '../../public/assets/logo.png'
+
 import "./NavbarStyles.css"
 
 const Navbar = () => {
@@ -18,7 +20,7 @@ const Navbar = () => {
             <nav>
                 {/* Logo - click on log anywhere and will take you back home */}
                 <a href="index.html">
-                    <img src='./src/assets/logo.png' className='logo-img'></img>
+                    <img src={navbarlogo} className='logo-img'></img>
                 </a>
                 {/* Create the nav links */}
                 <div>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import ContactSuccess from './contactsuccess'
+import ContactSuccess from './ContactSuccess'
 import "../App.css"
 import "./Contact.css"
 

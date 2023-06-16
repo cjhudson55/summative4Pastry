@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import "./Home.css"
+import background from '../../public/assets/img1.png'
 import { Helmet } from 'react-helmet';
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
                 <meta name="keywords" content="catering, functions, pastry shop, patisserie" />
             </Helmet>
             <div className='home-styling'>
-                <img src="./src/assets/img1.png"></img>
+                <img src={background}></img>
             </div>
             <div className='home-welcome'>
                 <div className='home-title'>

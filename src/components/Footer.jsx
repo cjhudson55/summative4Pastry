@@ -1,4 +1,6 @@
 import React from 'react'
+import footerlogo from '../../public/assets/logo1.png'
+
 import "./Footer.css"
 
 const Footer = () => {
@@ -11,7 +13,7 @@ const Footer = () => {
                     <p>E: info@flurpastries.com</p>
                 </div>
                 <div className='col-3 align-center'>
-                    <img src='./src/assets/logo1.png' className='logo-img-footer'></img>
+                    <img src={footerlogo} className='logo-img-footer'></img>
 
                 </div>
                 <div className='col-3 align-right'>

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 // import "../App.css"
 import "./PastryShop.css"
+import shopimage from '../../public/assets/flur-exterior.png'
+import streetmap from '../../public/assets/map.png'
 import { NavLink } from 'react-router-dom'
 
 
@@ -16,7 +18,7 @@ const PastryShop = () => {
             <div className='container'>
                 <div className='row'>
                     <div className='col-width'>
-                        <img src="./src/assets/flur-exterior.png" className='shop-img'></img>
+                        <img src={shopimage} className='shop-img'></img>
 
                     </div>
                     <div className='col-width shop-info'>
@@ -28,7 +30,7 @@ const PastryShop = () => {
                         <p><strong>Tuesday - Saturday</strong><br></br>7:30am until sold out<br></br><br></br><strong>321 Cuba Street</strong><br></br>Te Aro<br></br>Wellington<br></br><br></br>info@flurpastries.com<br></br>P 021 321 123</p><br></br>
                     </div>
                     <div className='col-width'>
-                        <img src="./src/assets/map.png" className='shop-img'></img>
+                        <img src={streetmap} className='shop-img'></img>
                     </div>
                 </div>
             </div>
