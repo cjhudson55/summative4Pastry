@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react'
 import { HashRouter, Routes, Route, NavLink } from 'react-router-dom'
 import navbarlogo from '../../public/assets/logo.png'
-
 import "./NavbarStyles.css"
 
 const Navbar = () => {
